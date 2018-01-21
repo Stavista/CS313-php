@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style> 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: deepskyblue;
-    position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-}
+<title>Samantha Stavast</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    0%   {background-color:blue; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:red; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:deepskyblue; left:0px; top:0px;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   {background-color:blue;left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:red; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:deepskyblue; left:0px; top:0px;}
-}
-</style>
-</head>
 <body>
-<div><h1>Hello World</h1></div>
+
+<h1 class="w3-center"><strong><a href="assignments.html">Samantha Stavast's Assignments</a></strong></h1>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="Hike.jpg">
+  <img class="mySlides" src="Mexico.jpg">
+  <img class="mySlides" src="Tule.jpg">
+  <img class="mySlides" src="Frosty.jpg">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<h2>About Me</h2>   
+<p>I am currently working on getting my major in Software Engineering! I love school. I also love anything active, especially if it’s outside, even more so if it involves water (even if it’s -14 like it was in my picture)! I am addicted to traveling and drag my amazing husband of 3.5 years on a trip any chance we get. I toured through Mexico and Belize for a month and that trip changed my life. Plus, I can now say I’ve made a pyramid on a pyramid! Other hobbies of mine include reading, painting, photography, volleyball, card games, all games, and basically just having fun in general. Most of all, I love The Church of Jesus Christ and Later Day Saints and am grateful every day for the blessing that it is in my life. </p>
+
 </body>
 </html>
