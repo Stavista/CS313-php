@@ -37,13 +37,18 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.link {
+    text-align: center; 
+}
+
 a {
-   font-family: unset;
+    font-family: unset;
     text-align: center;
+    font-size: 1.1em;
     position: relative;
     padding-left: 5%;
     padding-right: 5%;
     max-width: 75em;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
