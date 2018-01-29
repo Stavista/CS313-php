@@ -31,8 +31,7 @@ if ($Racoon != ''){
 if ($clear != ''){
     $_SESSION["princess"]=array();
 }
-header('Location: http://localhost/prove03/browse.php');
 
-//header('Location: https://fathomless-castle-58152.herokuapp.com/prove03/browse.php');
+header('Location: https://fathomless-castle-58152.herokuapp.com/prove03/browse.php');
 
 ?>

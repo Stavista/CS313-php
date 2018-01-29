@@ -43,8 +43,7 @@ if ($Racoon == "Remove_Racoon"){
     deleteElement("Pocahontas Racoon and Hummingbird", $_SESSION['princess']);
 }
 
-header('Location: http://localhost/prove03/cart.php');
 
-//header('Location: https://fathomless-castle-58152.herokuapp.com/prove03/browse.php');
+header('Location: https://fathomless-castle-58152.herokuapp.com/prove03/cart.php');
 
 ?>
