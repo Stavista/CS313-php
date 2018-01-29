@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Princess Pets!</title>
+  <script type="text/javascript" src="week7.js" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="b" background="Background.JPG" ;>
+  <h1 class="h">Every girl is a princess! And every princess deserves a friend! </h1>
+  <table style="width:80%" ; border="1" ; align="center" ;>
+
+    <tr>
+      <td class="t">Raja</td>
+      <td class="m">$5,000 </td>
+      <td class="t">Repunzel's Chameleon</td>
+      <td class="m">$2,000 </td>
+    </tr>
+    <tr>
+      <td class="p"> <img src="Jasmine.gif" alt="Jasmine and Raja" width="400" /> </td>
+      <td class="ch"><input class="c" onclick="calculateTotal()" type="checkbox" data-cost="5000 " /></td>
+      <td class="p"><img src="Tangled.gif" alt="Tangled Pet" width="400" /> </td>
+      <td class="ch"><input class="c" onclick="calculateTotal()" type="checkbox" data-cost="2000 " /></td>
+    </tr>
+    <tr>
+      <td class="t">Flounder</td>
+      <td class="m">$3,000 </td>
+      <td class="t">Mushu and the Cricket</td>
+      <td class="m">$7,000 </td>
+    </tr>
+    <tr>
+      <td class="p"><img src="Ariel.gif" alt="Ariel and Flounder" width="400" /></td>
+      <td class="ch"><input class="c" onclick="calculateTotal()" type="checkbox" data-cost="3000 " /></td>
+      <td class="p"> <img src="Mulan.gif" alt="Mushu and Cricket" width="400" ; /></td>
+      <td class="ch"><input class="c" onclick="calculateTotal()" type="checkbox" data-cost="7000 " /></td>
+    </tr>
+    <tr>
+      <td class="t">Toothless</td>
+      <td class="m"> $10,000 </td>
+      <td class="t"> Pocahontas's Racoon and Hummingbird</td>
+      <td class="m">$1,000 </td>
+    </tr>
+    <tr>
+      <td class="p"><img src="Dragon.gif" alt="How To Train Your Dragon" width="400" ; /></td>
+      <td class="ch"><input class="c" onclick="calculateTotal(this)" type="checkbox" data-cost="10000 " /></td>
+      <td class="p"> <img src="Pocahontas.gif" alt="Pocahontas Racoon and Hummingbird" width="400" ; /></td>
+      <td class="ch">
+        <input class="c" onclick="calculateTotal(this)" type="checkbox" data-cost="1000 " />
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+  <h2 class="h2"> Checkout Below by Entering Your Information and Pressing Submit: </h2>
+
+  <form class="f">
+    Please Enter Your First and Last Name: <br>
+    <input type="text" name="Name" /><br>
+
+    Please Enter Your Address: P.O. Box 42 Huslia, XX, 00000<br>
+    <input type="text" name="Street" />
+    <input oninput="checkState(this.value, 'address');" size="2" />
+    <input oninput="checkZip(this.value, 'address1');" size="5" /> <br />
+    <span class='address' style='color:red'>Invalid state</span>
+    <span class='address1' style='color:red'>Invalid zip code</span> <br />
+
+
+    Please Enter Your Phone Number: 000-000-0000 <br />
+    <input oninput="checkTel(this.value, 'tel');" size="12" /> <br />
+    <span class='tel' style='color:red'>Invalid phone number</span><br />
+    <div>
+      <h2 class="h2"> Total: <span id="totalCostSpan"></span></h2>
+
+    </div>
+
+    <h4 class="h4"> Please Enter Your Payment Information Below</h4>
+
+    Card Type: (Visa, MasterCard, or American Express) <br />
+    <input oninput="checkType(this.value, 'type');" size="19" /> <br />
+    <span class='type' style='color:red'>Invalid credit card type</span> <br />
+
+    Credit card number: 0000 0000 0000 0000</br>
+    <input oninput="checkCard(this.value, 'card1');" onblur="checkCard(this.value, 'card1');" size="19" /><br />
+    <span class='card1' style='color:red'>Invalid credit card number</span><br />
+
+    Expiration Date: 00-00<br />
+    <input oninput="checkExp(this.value, 'exp');" size="5" /><br />
+    <span class='exp' style='color:red'>Invalid expiration date</span><br />
+
+    <button type="submit">SUBMIT</button>
+
+    <button type="reset">RESET</button>
+  </form>
+
+
+
+</body>
+</html>

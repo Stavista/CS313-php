@@ -1,0 +1,49 @@
+.t {
+      text-align: center;
+      font-family: 'Curlz MT';
+      font-size: 2em;
+    }
+
+    .m {
+      text-align: left;
+      font-family: 'Curlz MT';
+    }
+
+    .p {
+      text-align: center;
+    }
+
+    body {
+      background-size: 100%;
+    }
+
+    .h {
+      text-align: center;
+      font-family: Algerian
+    }
+
+    .h2 {
+      text-align: center;
+    }
+
+form {
+      text-align: center;
+    }
+
+    .ch {
+      text-align: center;
+    }
+.add {
+    width: 15em;
+    height: 2.5em;
+    border-radius: 1em;
+    margin: .2em;
+}
+tr {
+    text-align: center;
+    align-content: center;
+    vertical-align: center;
+}
+button {
+    text-align: center;
+}
