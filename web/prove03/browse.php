@@ -40,7 +40,7 @@ if(!empty($_SESSION["princess"])){
     </tr>
     <tr>
       <td class="p"> <img src="Jasmine.gif" alt="Jasmine and Raja" width="400" />
-          <button class="add" name="Raja" value="Raja">Add to Cart</button> </td>
+          <button class="add" name="Raja" value="Raja" onclick="cartAmount()">Add to Cart</button> </td>
       <td class="ch"></td>
       <td class="p"><img src="Tangled.gif" alt="Tangled Pet" width="400" />
           <button class="add" name="Pascal" value="Pascal">Add to Cart</button></td>
@@ -81,4 +81,5 @@ if(!empty($_SESSION["princess"])){
      </form>
     </div>
     </body>
+
 </html>

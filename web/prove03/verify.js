@@ -83,3 +83,4 @@ function click(theClass) {
     document.getElementsByClassName(theClass)[0].style.visibility = 'visible';
 
 }
+

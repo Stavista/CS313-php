@@ -16,6 +16,16 @@
         <li class="nav-item <?php if ($file === 'checkout') echo 'active' ?>">
             <a href="checkout.php">Checkout</a>
         </li>
+        <li id="cartAmount"></li>
         
     </ul>
 </nav>
+
+
+<script>
+function cartAmount(){
+    var amount;
+        amount+=1;
+   
+    document.getElementById('cartAmount').innerHTML = amount;
+}</script>

@@ -1,0 +1,36 @@
+table {
+    border-color: darkgray;
+}
+
+th {
+    padding: 1em;
+    background-color:darkorchid;    
+}
+
+td{
+    padding: 1em;
+    background-color: #ebd6f5;
+}
+body{
+    background-color:#3d1452;
+}
+.page {
+    width: 90%;
+    height: 110%;
+    background-color:#f5eafa;
+}
+
+button {
+    border-radius: 1em;
+    padding: .5em;
+    width: 100%;
+    align-content: center;
+    background-color: #222;
+    text-decoration-color:#f5eafa;
+}
+.dot {
+    color: #ee7811;
+}
+.buttonText {
+    color:#f8c9a0;
+}
